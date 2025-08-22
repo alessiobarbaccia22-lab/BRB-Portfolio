@@ -1,20 +1,16 @@
-/* =========================
-   Palette & scale
-========================= */
+
 :root {
-  --ink: #1B1F3B;         /* Midnight Blue */
-  --accent: #FF6B6B;      /* Coral */
+  --ink: #1B1F3B;         
+  --accent: #FF6B6B;      
   --accent-hover: #e85b5b;
-  --bg: #F7F9FC;          /* Ice Gray */
-  --muted: #5B5F69;       /* Lead Gray */
+  --bg: #F7F9FC;         
+  --muted: #5B5F69;     
 
   --space-1: 8px; --space-2: 12px; --space-3: 16px;
   --space-4: 24px; --space-5: 32px; --space-6: 48px; --space-7: 72px;
 }
 
-/* =========================
-   Base
-========================= */
+/* Base */
 html, body {
   background: var(--bg);
   color: var(--ink);
@@ -32,9 +28,7 @@ p { margin-bottom: var(--space-4); }
 a { color: inherit; text-decoration: none; }
 a:hover { text-decoration: underline; text-decoration-thickness: 2px; }
 
-/* =========================
-   Navbar
-========================= */
+/*  Navbar */
 .navbar {
   --bs-navbar-brand-color: var(--ink);
   --bs-navbar-color: var(--ink);
@@ -65,9 +59,7 @@ a:hover { text-decoration: underline; text-decoration-thickness: 2px; }
 }
 .social-link:hover { color: var(--accent); opacity: 1; transform: translateY(-1px); }
 
-/* =========================
-   Hero
-========================= */
+/* Hero */
 .hero {
   position: relative;
   padding: clamp(var(--space-6), 6vw, var(--space-7)) 0;
@@ -92,9 +84,7 @@ a:hover { text-decoration: underline; text-decoration-thickness: 2px; }
   margin: 0 0 var(--space-4) 0;
 }
 
-/* =========================
-   Project Cards
-========================= */
+/* Project Cards */
 .project-card{
   border: 1px solid rgba(27,31,59,.08);
   border-radius: 1rem;
@@ -105,22 +95,22 @@ a:hover { text-decoration: underline; text-decoration-thickness: 2px; }
 }
 .project-card:hover { transform: translateY(-2px); box-shadow: 0 18px 40px rgba(27,31,59,.12); border-color: rgba(27,31,59,.16); }
 
-/* wrapper contenuti */
+
 .project-inner { display: flex; flex-direction: column; width: 100%; }
 
-/* immagine: centrata, con aria, mai deformata */
+
 .project-cover {
   display: block;
   margin: 10px auto;
   width: calc(100% - 20px);
-  height: 210px;                 /* mobile */
+  height: 210px;                 
   object-fit: contain;
   border-radius: .75rem;
   transition: transform .3s ease;
 }
 .project-card:hover .project-cover { transform: scale(1.02); }
 
-/* testo card */
+
 .card-body { padding: 1.25rem 1.5rem; }
 .card-title { margin-bottom: .5rem; }
 .badges .badge { margin-right: .5rem; margin-bottom: .9rem; }
@@ -135,7 +125,7 @@ a:hover { text-decoration: underline; text-decoration-thickness: 2px; }
 .badge-pill-ink{ color: var(--ink); }
 .badge-pill-muted{ color: var(--muted); }
 
-/* CTA full width */
+
 .card-cta{
   display: flex; align-items: center; justify-content: center; gap: .55rem;
   width: 100%; background: var(--accent); color: #fff;
@@ -154,9 +144,7 @@ a:hover { text-decoration: underline; text-decoration-thickness: 2px; }
   }
 }
 
-/* =========================
-   Skills section
-========================= */
+/* Skills section */
 .skills-section {
   padding: clamp(var(--space-6), 6vw, var(--space-7)) 0;
   background: #ffffff80;
@@ -176,17 +164,13 @@ a:hover { text-decoration: underline; text-decoration-thickness: 2px; }
 }
 .skill-badge:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
 
-/* =========================
-   Footer
-========================= */
+/* Footer */
 .site-footer {
   padding: 1.25rem 0;
   border-top: 1px solid rgba(27,31,59,.06);
 }
 
-/* =========================
-   A11y & Motion
-========================= */
+/* A11y & Motion */
 :focus-visible { outline: 3px solid rgba(255,107,107,.45); outline-offset: 2px; }
 .btn:focus-visible { box-shadow: 0 0 0 3px rgba(255,107,107,.35); outline: none; }
 

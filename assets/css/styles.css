@@ -1,12 +1,10 @@
-/* =========================
-   Palette & scale
-========================= */
+
 :root {
-  --ink: #1B1F3B; /* Midnight Blue */
-  --accent: #FF6B6B; /* Coral */
+  --ink: #1B1F3B; 
+  --accent: #FF6B6B; 
   --accent-hover: #e85b5b;
-  --bg: #F7F9FC; /* Ice Gray */
-  --muted: #5B5F69; /* Lead Gray */
+  --bg: #F7F9FC; 
+  --muted: #5B5F69; 
   --space-1: 8px;
   --space-2: 12px;
   --space-3: 16px;
@@ -16,9 +14,7 @@
   --space-7: 72px;
 }
 
-/* =========================
-   Base
-========================= */
+/* Base */
 html, body {
   background: var(--bg);
   color: var(--ink);
@@ -50,9 +46,7 @@ a:hover {
   text-decoration-thickness: 2px;
 }
 
-/* =========================
-   Navbar
-========================= */
+/* Navbar */
 .navbar {
   --bs-navbar-brand-color: var(--ink);
   --bs-navbar-color: var(--ink);
@@ -116,9 +110,7 @@ a:hover {
   transform: translateY(-1px);
 }
 
-/* =========================
-   Hero
-========================= */
+/* Hero */
 .hero {
   position: relative;
   padding: clamp(var(--space-6), 6vw, var(--space-7)) 0;
@@ -139,9 +131,7 @@ a:hover {
   border-radius: 50%;
 }
 
-/* =========================
-   Sections
-========================= */
+/* Sections */
 .section {
   padding: clamp(var(--space-6), 6vw, var(--space-7)) 0;
 }
@@ -151,9 +141,7 @@ a:hover {
   margin: 0 0 var(--space-4) 0;
 }
 
-/* =========================
-   Project Cards
-========================= */
+/* Project Cards */
 .project-card {
   border: 1px solid rgba(27, 31, 59, 0.08);
   border-radius: 1rem;
@@ -192,7 +180,6 @@ a:hover {
   transform: scale(1.02);
 }
 
-/* testo card */
 .card-body {
   padding: 1.25rem 1.5rem;
 }
@@ -224,7 +211,7 @@ a:hover {
   color: var(--muted);
 }
 
-/* CTA full width */
+
 .card-cta {
   display: flex;
   align-items: center;
@@ -248,7 +235,7 @@ a:hover {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
 }
 
-/* desktop: immagine colonna fissa con aria coerente */
+
 @media (min-width: 768px) {
   .project-inner {
     flex-direction: row;
@@ -258,12 +245,10 @@ a:hover {
     flex: 0 0 420px;
     width: 420px;
     height: 260px;
-    margin: 14px; /* aria attorno */
+    margin: 14px; 
   }
 }
-/* =========================
-   Skills section
-========================= */
+/* Skills section */
 .skills-section {
   padding: clamp(var(--space-6), 6vw, var(--space-7)) 0;
   background: rgba(255, 255, 255, 0.5019607843);
@@ -297,17 +282,13 @@ a:hover {
   border-color: var(--accent);
 }
 
-/* =========================
-   Footer
-========================= */
+/* Footer */
 .site-footer {
   padding: 1.25rem 0;
   border-top: 1px solid rgba(27, 31, 59, 0.06);
 }
 
-/* =========================
-   A11y & Motion
-========================= */
+/* A11y & Motion */
 :focus-visible {
   outline: 3px solid rgba(255, 107, 107, 0.45);
   outline-offset: 2px;
